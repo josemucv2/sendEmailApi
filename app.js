@@ -13,6 +13,7 @@ const allowedOrigins = [
   "http://localhost:3001",
   "http://localhost:3000",
   "https://jmdevv2.vercel.app",
+  "https://jmdevv2.vercel.app/contact",
 ];
 
 const corsOptions = {
