@@ -12,11 +12,12 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:3001",
   "http://localhost:3000",
-  "https://jmdevv2.vercel.app/",
+  "https://jmdevv2.vercel.app",
 ];
 
 const corsOptions = {
   origin: (origin, callback) => {
+    console.log(origin, "origin");
     if (allowedOrigins.includes(origin) || !origin) {
       callback(null, true);
     } else {
