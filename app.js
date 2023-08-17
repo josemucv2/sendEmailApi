@@ -9,8 +9,20 @@ const port = 3000;
 
 app.use(express.json());
 
+const allowedOrigins = [
+  "http://localhost:3001",
+  "http://localhost:3000",
+  "https://jmdevv2.vercel.app/",
+];
+
 const corsOptions = {
-  origin: "http://localhost:3001",
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("Acceso no permitido por CORS"));
+    }
+  },
   methods: "POST",
 };
 
