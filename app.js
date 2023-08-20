@@ -12,8 +12,8 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:3001",
   "http://localhost:3000",
-  "https://jmdevv2.vercel.app",
-  "https://jmdevv2.vercel.app/contact",
+  "https://jmdevv2.vercel.app/",
+  "https://jmdevv2.vercel.app/contact/",
   "https://send-email-api-josemucv2.vercel.app",
   "https://send-email-api-ten.vercel.app",
   "https://send-email-api-omega.vercel.app",
