@@ -15,6 +15,9 @@ const allowedOrigins = [
   "https://jmdevv2.vercel.app",
   "https://jmdevv2.vercel.app/contact",
   "https://send-email-api-josemucv2.vercel.app",
+  "https://send-email-api-ten.vercel.app",
+  "https://send-email-api-omega.vercel.app",
+  "https://jmdevv2-josemucv2.vercel.app"
 ];
 
 const corsOptions = {
