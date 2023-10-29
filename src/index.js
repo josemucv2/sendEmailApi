@@ -22,6 +22,7 @@ const allowedOrigins = [
   "https://send-email-api-flame.vercel.app/api",
   "https://send-email-api-flame.vercel.app",
   "https://josemartinezcode.com",
+  "https://josemartinezcode.com/contact",
 ];
 
 const corsOptions = {
