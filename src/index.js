@@ -42,6 +42,10 @@ app.use(_json());
 app.use(cors(corsOptions));
 app.use("/api", router);
 
+app.get("/", (req, res) => {
+  res.send("api send email succes");
+});
+
 // Configura el transporter de nodemailer
 
 app.listen(port, () => {
